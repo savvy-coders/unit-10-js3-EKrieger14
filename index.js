@@ -47,3 +47,98 @@
 
 // 16. Create a function 'stringifyPerson' that takes a 'person' object as an argument, stringifies the 'person' object into a JSON string, and returns the string.
 
+
+function createPerson() {
+    const person = {
+        name: 'Ethan Krieg',
+        age: 23,
+    };
+    return person;
+}
+
+
+function logPersonProperties(person) {
+    return person.name, person.age;
+}
+
+
+function modifyAge(person, Newage) {
+    person.age = Newage;
+    return person;
+}
+
+
+function addJob(person, job) {
+    person.job = 'job';
+    return person;
+}
+
+
+function deleteAge(person) {
+    delete person.age;
+    return person;
+}
+
+
+function addGreet(person) {
+    person.greet = function() {
+        return 'Hello, ' + this.name;
+    };
+}
+
+
+function createNumbersArray(person) {
+    const numbers = [5, 10, 15, 20, 25];
+    return person;
+}
+
+
+function logFirstAndThird(numbers) {
+    return [0], [1];
+} 
+
+
+function modifySecond(numbers, Newnumbers) {
+    return numbers;
+}
+
+
+function logLength(numbers) {
+    return numbers.length;
+}
+
+function iterateWithFor(numbers) {
+    for (let i = 0; i < numbers.length; i++);
+    return numbers[i];
+}
+
+
+function iterateWithWhile(numbers) {
+    let i =0;
+    while (i < numbers.length);
+    return numbers[i];
+}
+
+
+function iterateWithForOf(numbers) {
+    for (const number of numbers);
+    return numbers[i];
+}
+
+
+function createJSON(person) {
+    const json = '{"name:"Ethan Krieg","job":"job"}';
+    return person;
+}
+
+
+function parseJSON (json) {
+    const person = JSON.parse(json);
+    return json;
+}
+
+
+function stringifyPerson(person) {
+    const jsonString = JSON.stringify(person);
+    return person;
+}
